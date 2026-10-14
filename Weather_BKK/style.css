@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1d33;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+div {
+    background-color: #183653;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#temperature {
+    font-size: 42px;
+}
+
+#condition {
+    font-size: 22px;
+}
+
+#humidity,
+#rain {
+    font-size: 16px;
+    color: #c6d8e8;
+}
