@@ -1,0 +1,255 @@
+/* 1. BASIC PAGE SETTINGS */
+
+/* This CSS file contains the styling rules for the website,
+   including layout, colours, fonts and visual elements. */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Sets the background colour, text colour, font and line spacing
+   for the entire webpage. */
+
+body {
+    margin: 0;
+    background-color: #171717;
+    color: #eeeeee;
+    font-family: Lato, Cormorant Garamond;
+    line-height: 1.6;
+}
+
+/* 2. HEADER AND NAVIGATION BAR */
+
+/* The header section of the webpage, including the background image,
+   title and tagline. */
+header {
+    min-height: 420px;
+    padding: 60px 20px 40px;
+    background-image: url("Images/pexels-tima-miroshnichenko-7991436.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/* The title of the webpage, displayed in a large font size and gold colour. */
+header h1 {
+    margin-bottom: 30px;
+    color: #d5ac36;
+    font-size: 58px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+/* The navigation bar, containing links to different sections of the website.
+   The links are displayed in a horizontal row and change colour when hovered over. */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px 35px;
+    margin-top: 0;
+}
+
+/* The links in the navigation bar, displayed in a large font size and light grey colour. */
+nav a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.2s;
+}
+
+/* The links in the navigation bar change colour to gold when hovered over. */
+nav a:hover {
+    color: #d5ac36;
+}
+
+.tagline {
+    margin-top: 45px;
+    color: #d5ac36;
+    font-size: 24px;
+}
+
+
+   /*3. MAIN PAGE LAYOUT*/
+
+  /* The main content section of the webpage, containing information about the different categories of projects. */
+   main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* The sections within the main content area, each containing a heading and a grid of project cards. */
+section {
+    padding: 40px 0;
+}
+
+
+
+   /*4. HOMEPAGE CATEGORY GRID*/
+
+/* The headings for the categories and contact sections, displayed in a large font size and gold colour. */
+   .categories h2,
+.contact h2 {
+    color: #d5ac36;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* The grid layout for the categories, displaying two columns of category cards with a gap between them. */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* The individual category cards, displayed with a gold colour, centered text and no underline. */
+.category-card {
+    color: #e9c709;
+    text-align: center;
+    text-decoration: none;
+}
+
+.category-card h3 {
+    font-weight: normal;
+    transition: color 0.2s;
+}
+
+.category-card:hover h3 {
+    color: #d5ac36;
+}
+
+
+/* Category images */
+.category-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/*5. CONTACT SECTION*/
+
+/* The contact section, displayed with a top border and centered text. */
+.contact {
+    border-top: 1px solid #444444;
+    text-align: center;
+}
+
+
+/*6. FILM CATALOGUE PAGES*/
+
+/* The list of projects, displayed in a grid layout with two columns and a gap between them. */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.project-card {
+    padding: 25px;
+    border: 1px solid #514637;
+    background-color: #201e1b;
+}
+
+.project-card h3 {
+    color: #d5ac36;
+    font-weight: normal;
+}
+
+.project-card p {
+    color: #bbbbbb;
+    line-height: 1.6;
+}
+
+.project-card a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Project images */
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Category images */
+.category-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/*7. ABOUT ME PAGE*/
+
+/* The about section, containing a heading and a flexbox layout for the content. */
+.about-section > h2 {
+    color: #d5ac36;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+/* The content of the about section, displayed in a flexbox layout with a gap between the image and text. */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* The placeholder sets the size of the profile image container and hides overflow */
+.about-placeholder {
+    width: 220px;
+    height: 280px;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+/* The about image, displayed with a width and height of 100%, and using object-fit to cover the placeholder. */
+.about-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    color: #d5ac36;
+    font-weight: normal;
+}
+
+.about-text p {
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+
+/*8. FOOTER*/
+
+/* The footer section, displayed with padding, a dark background colour, light grey text colour, centered text and a smaller font size. */
+footer {
+    padding: 20px;
+    background-color: #080808;
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 13px;
+}
